@@ -6,7 +6,7 @@
 vim Dockerfile
 ```
 
-## 2. Add the following information in the file
+## 2. Add the following information in Dockerfile file
 
 ```
 FROM centos:7
