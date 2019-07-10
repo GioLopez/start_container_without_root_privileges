@@ -1,5 +1,7 @@
 # Start container without root privileges
 
+By default containers run with root privileges, it is a big security mistake to run like this, one of the best practice that OWAS recommend is to avoid this practice, to achive that, follow the next steps.
+
 ## 1. Create a docker file
 
 ```
