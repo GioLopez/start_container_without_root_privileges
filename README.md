@@ -14,9 +14,13 @@ vim Dockerfile
 FROM centos:7
 RUN useradd apps
 USER apps
+WORKDIR /home/apps
+ADD mi-archivo.txt /home/apps
 ```
 
-Dockerfile indicate that conteiner will user Centos 7 and will RUN with user apps
+Dockerfile indicate that conteiner will user Centos 7 and will RUN with user apps, with the working directory on /home/apps and ADD the file mi-archivo.txt to /home/apps/
+
+NOTE: mi-archivo.txt need to exists before build the container
 
 ## 3. Build Centos 7 image with user apps
 
