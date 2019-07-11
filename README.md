@@ -43,8 +43,11 @@ NOTE: Need to be sure that docker is running
 ## 4. Run the folowwing command to check that container run without user
 
 ```
-docker run --rm my_image:1 id
+docker run --rm my_image:1
 ```
+
+It will let you in the container, you could check with id command which user is the container using, the working dir, the file inside /home/apps directory
+
 ## 5. Validate file mi-archivo.txt file in /home/apps/
 
 ```
