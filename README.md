@@ -35,5 +35,10 @@ NOTE: Need to be sure that docker is running
 ```
 docker run --rm my_image:1 id
 ```
+## 5. Validate file mi-archivo.txt file in /home/apps/
 
-That's all, thanks for visiting!
+```
+docker run --rm my_image:1 cat /home/apps/mi-archivo.txt
+```
+
+That's all folks, thanks for visiting!
