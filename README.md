@@ -34,7 +34,7 @@ NOTE: Need to be sure that docker is running
 ## 4. Run the folowwing command to check that container run without user
 
 ```
-docker run --itd my_image:1 --rm --name my_centos_container
+docker run -itd --rm --name centos_container my_image:1
 ```
 
 It will let you in the container, you could check with id command which user is the container using, the working dir, the file inside /home/apps directory
@@ -42,7 +42,7 @@ It will let you in the container, you could check with id command which user is 
 ## 5. Validate file mi-archivo.txt file in /home/apps/
 
 ```
-docker run --rm --name my_centos_container my_image:1 cat /home/apps/mi-archivo.txt
+docker run -it --rm --name my_centos_container my_image:1 cat /home/apps/mi-archivo.txt
 ```
 
 That's all folks, thanks for visiting!
